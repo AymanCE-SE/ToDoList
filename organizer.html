@@ -1,0 +1,119 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: #7b7a7a32;
+    }
+    h1{
+        text-align: center;
+        padding:55px;
+        font-size: 50px;
+        background-color: #000000e7;
+        color: white;
+        font-family:'Times New Roman', Times, serif;
+        border-bottom: 20px rgba(255, 217, 0, 0.864) solid;
+        margin-bottom: 20px;
+    }
+
+    table{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        border-spacing: 3px;
+    }
+    th{
+        background-color: #cc0a0a;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 15px;
+        font-size: 26px;
+
+    }
+    td{
+        padding: 12px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    form{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 15px
+    }
+    input[type="text"]{
+        width: 92%;
+        margin: 20px 0 20px 0;
+        height: 75px;        
+        border: inset ;
+        border-radius: 28px;
+        font-size: 25px;
+        padding-left: 20px;
+        font-size: 32px;
+    }
+
+    .cycle{
+        background-image: url(cycle.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30px;
+        width: 30px;
+        background-size: 15px;
+        border-radius: 10px;
+    }
+
+    input[Value="Add"]{
+        background-color: #5cb85c;
+        border-radius: 26px;
+        padding: 10px;
+        margin-left: 10px;
+        width: 83px;
+        height: 75px;
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .row:nth-child(odd) {
+        background-color: #bdbbbb;
+    }
+    .row:nth-child(even) {
+        background-color: white;
+    }
+
+    #header{
+        background-color: red;
+    }
+
+    .completed {
+    text-decoration: line-through;
+}
+
+    #checkBox{
+        height: 20px;
+        width: 20px;
+    }
+</style>
+<body>
+    <h1>To Do Organizer</h1>
+    <form>
+        <input type="text" placeholder="Add your new plan" >
+        <input type="button" value="Add" >
+    </form>
+    <table id="table">
+        <tr id="header">
+            <th>Done</th>
+            <th>Task</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+    <script src="organizer.JS"></script>
+</body>
+</html>
